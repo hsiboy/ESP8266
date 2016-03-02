@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    
+    <head>
+        <title>title</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <script src="lib/jquery-1.6.4.js"></script>
+        <script src="lib/jquery.mobile-1.1.0.js"></script>
+        <link href="src/css/jquery.mobile.structure-1.1.0.css" rel="stylesheet"
+        />
+        <link href="src/css/jquery.mobile.theme-1.1.0.css" rel="stylesheet" />
+    </head>
+    
+    <body>
+        <div data-role="page" id="page1">
+            <div data-role="header" data-theme="b">
+                <h1>FastLED - ESP8266</h1>
+            </div>
+            <div data-role="content">
+                <div data-role="fieldcontain" id="sliderSpeed">
+                    <label for="sliderSpeed-range">SPEED</label>
+                    <input type="range" id="sliderSpeed-range" value="200" min="20" max="400"
+                    step="10" data-theme="b" />
+                </div>
+                <div data-role="fieldcontain" id="sliderG">
+                    <label for="sliderG-range">BRIGHTNESS</label>
+                    <input type="range" id="sliderG-range" value="128" min="0" max="254"
+                    step="1" data-theme="b" />
+                </div>
+                <fieldset data-role="controlgroup">
+                    <legend></legend>
+                    <input type="radio" id="radio1" name="radio1" value="F_0" data-theme="b"
+                    />
+                    <label for="radio1">All Off</label>
+                    <input type="radio" id="radio2" name="radio1" value="F_1" data-theme="b"
+                    />
+                    <label for="radio2">2 Random Colors</label>
+                    <input type="radio" id="radio3" name="radio1" value="F_2"
+                    data-theme="b" />
+                    <label for="radio3">3 Random Colors</label>
+                    <input type="radio" id="radio4" name="radio1" value="F_3"
+                    data-theme="b" />
+                    <label for="radio4">Purple &amp; Green</label>
+                    <input type="radio" id="radio5" name="radio1" value="F_4"
+                    data-theme="b" />
+                    <label for="radio5">Black &amp; White</label>
+                    <input type="radio" id="radio6" name="radio1" value="F_5"
+                    data-theme="b" />
+                    <label for="radio6">Forest Colors</label>
+                    <input type="radio" id="radio7" name="radio1" value="F_6" data-theme="b"
+                    />
+                    <label for="radio7">Cloud Colors</label>
+                    <input type="radio" id="radio8" name="radio1" value="F_7" data-theme="b"
+                    />
+                    <label for="radio8">Lava Colors</label>
+                    <input type="radio" id="radio9" name="radio1" value="F_8" data-theme="b"
+                    />
+                    <label for="radio9">Ocean Colors</label>
+                    <input type="radio" id="radio10" name="radio1" value="F_9" checked="checked"
+                    data-theme="b" />
+                    <label for="radio10">Party Colors</label>
+                </fieldset>
+            </div>
+            <div data-role="footer" data-theme="b">
+                <h1>Footer</h1>
+            </div>
+        </div>
+    </body>
+
+</html>
